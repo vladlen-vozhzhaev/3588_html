@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<style>
+		*{
+			color: red;
+			font-weight: 800;
+		}
+		p{
+			background: navy;
+			color: white;
+			padding: 20px;
+			margin-top: 16px;
+		}
+		.lime-paragraph{
+			background: lime;
+			color: black;
+		}
+		#hSpan{
+			font-size: 30px;
+		}
+		nav a {
+			color: navy;
+		}
+		li > a{
+			color: green;
+		}
+		nav + p {
+			color: green;
+		}
+
+		nav ~ span {
+			color: blueviolet;
+		}
+		a[href^="http"]::before{
+			content: "❌ ";
+			font-size: 10px;
+		}
+		a[href^="https"]::before{
+			content: "✅ ";
+			font-size: 10px;
+		}
+		a[href^="http"]::after{
+			content: " ↗";
+			font-size: 10px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<hr>
+	<nav>
+		<a href="https://vk.com">Вконтакте</a>
+		<ul>
+			<li><a href="https://mail.ru">Почта</a></li>
+			<li><a href="http://site.com">Сайт</a></li>
+			<li><a href="page.html">Страница сайта</a></li>
+		</ul>
+	</nav>
+
+
+	<p>Lorem ipsum dolor sit.</p>
+	<span>Lorem ipsum dolor sit.</span>
+	<p class="lime-paragraph">Lorem ipsum dolor sit.</p>
+	<span>Lorem ipsum dolor sit.</span>
+	<p>Lorem ipsum dolor sit.</p>
+	<span id="hSpan">Lorem ipsum dolor sit.</span>
+	<p>Lorem ipsum dolor sit.</p>
+	<span>Lorem ipsum dolor sit.</span>
+	<p class="lime-paragraph">Lorem ipsum dolor sit.</p>
+	<span>Lorem ipsum dolor sit.</span>
+	<div>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quod!</span>
+	</div>
+</body>
+</html>
